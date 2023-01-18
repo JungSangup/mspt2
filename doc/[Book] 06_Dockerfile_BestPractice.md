@@ -104,9 +104,9 @@ Docker에서는 이러한 상황을 방지하기 위한 방법으로 [.dockerign
 temp?
 **/*.go
 ```
-> `*/temp*` : root 디렉토리의 서브디렉토리들 중 temp로 시작되는 서브디렉토리 하위의 파일 및 temp로 시작되는 파일들을 제외
-> `*/*/temp*` : root디렉토리의 두 레벨 아래의 서브디렉토리들 중 temp로 시작되는 서브디렉토리 하위의 파일 및 temp로 시작되는 파일들을 제외
-> `temp?` : root 디렉토리 중 명칭의 길이가 4이고 temp로 시작하는 디렉토리나 파일들을 제외
+> `*/temp*` : root 디렉토리의 서브디렉토리들 중 temp로 시작되는 서브디렉토리 하위의 파일 및 temp로 시작되는 파일들을 제외 (e.g. /somedir/temporary.txt , /somedir/temp)
+> `*/*/temp*` : root 두 레벨 아래 모든 서브디렉토리 하위의 파일과 디렉토리 중 temp로 시작되는 모든 것 제외 (e.g. /somedir/subdir/temporary.txt)
+> `temp?` : root 디렉토리 중 명칭의 길이가 5이고 temp로 시작하는 디렉토리나 파일들을 제외 (e.g. /tempa , /tempb)
 > `**/*.go` : Build context의 모든 디렉토리에서 `.go`로 끝나는 모든 파일을 제외
 - Go의 [filepath.Match](https://pkg.go.dev/path/filepath#Match) 규칙 참조.
 
