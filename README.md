@@ -1,5 +1,12 @@
 # mspt2 - Docker & Kubernetes
 
+2023년 교육과정 개편과 함께 mspt3 과정이 개설되었습니다.  
+새롭게 업데이트된 내용은 [mspt3](https://github.com/JungSangup/mspt3)를 참고하세요.  
+
+그리고, [Killercoda](https://killercoda.com/brian)의 내용도 mspt3 실습내용에 맞춰서 일부 변경되었습니다.  
+업데이트된 [mspt3 교재](https://github.com/JungSangup/mspt3/tree/main/doc)와 [Killercoda](https://killercoda.com/brian)를 사용하세요.
+
+
 ### 디렉토리 구조 및 설명
 | 디렉토리 | 설명 |
 | :--- | :--- |
